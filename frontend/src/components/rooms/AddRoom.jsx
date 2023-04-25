@@ -2,7 +2,7 @@ const AddRoom = () => {
 	const url = import.meta.env.VITE_BACKEND + import.meta.env.VITE_API_VERSION;
 
 	const submit = async (event) => {
-		event.prevent.default();
+		event.preventDefault();
 		const form = new FormData(event.target);
 		const response = await fetch(url + "/rooms", {
 			method: "POST",

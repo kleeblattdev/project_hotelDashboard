@@ -1,0 +1,10 @@
+.roomlist {
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	margin: 20px;
+	a {
+		border: 2px solid black;
+		padding: 20px;
+	}
+}
