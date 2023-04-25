@@ -26,6 +26,7 @@ const RoomList = () => {
 								key={uuidv4()}
 								roomnr={room.roomnr}
 								roomtype={room.roomtype}
+								roomid={room._id}
 							/>
 						);
 					})}

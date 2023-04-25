@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/navigation/Navigation";
 import Home from "./pages/Home";
+import Details from "./pages/Details";
 import RoomList from "./components/rooms/RoomList";
 import AddRoom from "./components/rooms/AddRoom";
 import BookingList from "./components/bookings/BookingList";
@@ -14,6 +15,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/rooms" element={<RoomList />} />
+					<Route path="/rooms/:roomId" element={<Details />} />
 					<Route path="/bookings" element={<BookingList />} />
 					<Route path="/addRoom" element={<AddRoom />} />
 					<Route path="/addBooking" element={<AddBooking />}></Route>
