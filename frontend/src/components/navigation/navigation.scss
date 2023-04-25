@@ -1,0 +1,11 @@
+nav {
+	display: flex;
+	justify-content: space-around;
+	a {
+		color: #dda15e;
+	}
+	a.active,
+	a:hover {
+		color: #bc6c25;
+	}
+}
