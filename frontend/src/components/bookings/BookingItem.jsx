@@ -1,9 +1,13 @@
-const BookingItem = () => {
+import { Link } from "react-router-dom";
+
+const BookingItem = ({ booking }) => {
 	return (
-		<section>
+		<Link>
 			<h3></h3>
-			<p></p>
-		</section>
+			<p>From: {booking.start}</p>
+			<p>To: {booking.end}</p>
+			<p>Breakfast: {booking.breakfast}</p>
+		</Link>
 	);
 };
 

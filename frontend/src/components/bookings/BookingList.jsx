@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import BookingItem from "./BookingItem";
+import "./bookingList.scss";
 
 const BookingList = () => {
 	const [bookings, setBookings] = useState();
@@ -16,11 +17,11 @@ const BookingList = () => {
 	}, []);
 	return (
 		<main>
-			<section>
+			<section className="bookingList">
 				<Link to="/addBooking">Add Booking</Link>
 				{bookings &&
 					bookings.map((booking) => {
-						return <BookingItem key={uuidv4()} />;
+						return <BookingItem key={uuidv4()} booking={booking} />;
 					})}
 			</section>
 		</main>
